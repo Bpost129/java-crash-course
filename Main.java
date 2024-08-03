@@ -32,19 +32,35 @@ public class Main {
       System.out.println(friend);
     }
 
+
+    int[] numbers = {2, 19, 20, 33, 15, 17, 5};
+    getMaxFromArr(numbers);
+
   }
 
 
-  public static int getMax(int num1, int num2) {
-    if (num1 > num2) {
-      System.out.println("Max is " + num1);
-      return num1;
-    } else if (num2 > num1) {
-      System.out.println("Max is " + num2);
-      return num2;
-    } else {
-      System.out.println("Even numbers!!");
-      return 0;
+  // public static int getMax(int num1, int num2) {
+  //   if (num1 > num2) {
+  //     System.out.println("Max is " + num1);
+  //     return num1;
+  //   } else if (num2 > num1) {
+  //     System.out.println("Max is " + num2);
+  //     return num2;
+  //   } else {
+  //     System.out.println("Even numbers!!");
+  //     return 0;
+  //   }
+  // }
+
+  public static int getMaxFromArr(int[] numbers){
+    int max = numbers[0];
+    for (int number : numbers) {
+      if (number > max) {
+        max = number;
+      }
     }
+
+    System.out.println(max);
+    return max;
   }
 }
