@@ -23,10 +23,14 @@ public class Main {
 
     // for (int i = 0; i <= 10; i++) {
     //   System.out.println("i = " + i);
-
     // }
 
-    getMax(99, 99);
+    // getMax(99, 99);
+
+    String[] friends = {"Maria", "Alex", "Bita", "Ana", "John", "Steve"};
+    for (String friend : friends) {
+      System.out.println(friend);
+    }
 
   }
 
