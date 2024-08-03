@@ -21,12 +21,26 @@ public class Main {
     //     break;
     // }
 
-    for (int i = 0; i <= 10; i++) {
-      System.out.println("i = " + i);
-      
+    // for (int i = 0; i <= 10; i++) {
+    //   System.out.println("i = " + i);
+
+    // }
+
+    getMax(99, 99);
+
+  }
+
+
+  public static int getMax(int num1, int num2) {
+    if (num1 > num2) {
+      System.out.println("Max is " + num1);
+      return num1;
+    } else if (num2 > num1) {
+      System.out.println("Max is " + num2);
+      return num2;
+    } else {
+      System.out.println("Even numbers!!");
+      return 0;
     }
-
-
-
   }
 }
