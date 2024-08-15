@@ -10,4 +10,16 @@ public class Car {
     this.color = color;
     this.doors = doors;
   }
+
+  public void move() {
+    System.out.println("The car " + this.name + " is moving.");
+
+  }
+
+  public void stop() {
+    System.out.println("The car " + this.name + " has stopped.");
+
+  }
+
+  
 }

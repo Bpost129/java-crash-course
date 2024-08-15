@@ -29,7 +29,7 @@ public class Main {
 
     String[] friends = {"Maria", "Alex", "Bita", "Ana", "John", "Steve"};
     for (String friend : friends) {
-      System.out.println(friend);
+      // System.out.println(friend);
     }
 
 
@@ -60,7 +60,10 @@ public class Main {
       }
     }
 
-    System.out.println(max);
+    // System.out.println(max);
     return max;
   }
+
+
+  Car mazda = new Car("Mazda", "RX-7", "Red", 2);
 }
