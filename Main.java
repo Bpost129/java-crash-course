@@ -34,7 +34,15 @@ public class Main {
 
 
     int[] numbers = {2, 19, 20, 33, 15, 17, 5};
-    getMaxFromArr(numbers);
+    // getMaxFromArr(numbers);
+    
+    Car mazda = new Car("Mazda", "RX-7", "Red", 2);
+    Car subi = new Car("Subaru", "WRX", "Blue", 4);
+  
+    System.out.println(subi.getName());
+    System.out.println(subi.getModel());
+    System.out.println(subi.getColor());
+    System.out.println(subi.getDoors());
 
   }
 
@@ -52,18 +60,18 @@ public class Main {
   //   }
   // }
 
-  public static int getMaxFromArr(int[] numbers){
-    int max = numbers[0];
-    for (int number : numbers) {
-      if (number > max) {
-        max = number;
-      }
-    }
+  // public static int getMaxFromArr(int[] numbers){
+  //   int max = numbers[0];
+  //   for (int number : numbers) {
+  //     if (number > max) {
+  //       max = number;
+  //     }
+  //   }
 
-    // System.out.println(max);
-    return max;
-  }
+  //   System.out.println(max);
+  //   return max;
+  // }
 
 
-  Car mazda = new Car("Mazda", "RX-7", "Red", 2);
+
 }
