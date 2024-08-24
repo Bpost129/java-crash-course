@@ -11,6 +11,10 @@ public class Car {
     this.doors = doors;
   }
 
+  public Car() {
+    this("Name", "Model", "Color", 0);
+  }
+
   public void move() {
     System.out.println("The car " + this.name + " is moving.");
   }

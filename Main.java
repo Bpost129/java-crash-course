@@ -27,23 +27,42 @@ public class Main {
 
     // getMax(99, 99);
 
-    String[] friends = {"Maria", "Alex", "Bita", "Ana", "John", "Steve"};
-    for (String friend : friends) {
-      // System.out.println(friend);
-    }
+    // String[] friends = {"Maria", "Alex", "Bita", "Ana", "John", "Steve"};
+    // for (String friend : friends) {
+    //   // System.out.println(friend);
+    // }
 
 
-    int[] numbers = {2, 19, 20, 33, 15, 17, 5};
-    // getMaxFromArr(numbers);
+    // int[] numbers = {2, 19, 20, 33, 15, 17, 5};
+    // // getMaxFromArr(numbers);
     
-    Car mazda = new Car("Mazda", "RX-7", "Red", 2);
-    Car subi = new Car("Subaru", "WRX", "Blue", 4);
-  
-    System.out.println(subi.getName());
-    System.out.println(subi.getModel());
-    System.out.println(subi.getColor());
-    System.out.println(subi.getDoors());
+    // Car mazda = new Car("Mazda", "RX-7", "Red", 2);
+    // Car subi = new Car("Subaru", "WRX", "Blue", 4);
 
+
+  
+    // System.out.println(subi.getName());
+    // System.out.println(subi.getModel());
+    // System.out.println(subi.getColor());
+    // System.out.println(subi.getDoors());
+    // System.out.println("\n");
+    
+    // System.out.println(mazda.getName());
+    // System.out.println("\n");
+
+    // subi.setModel("Crosstrek");
+    // subi.setColor("Silver");
+
+    // System.out.println(subi.getName());
+    // System.out.println(subi.getModel());
+    // System.out.println(subi.getColor());
+    // System.out.println(subi.getDoors());
+
+    Car car = new Car("Kia", "Forte", "Black", 4);
+    Plane plane = new Plane("Boeing", "767", "White", 4);
+
+    plane.move();
+    plane.stop();
   }
 
 
@@ -72,6 +91,55 @@ public class Main {
   //   return max;
   // }
 
+  
+  }
 
+
+class Vehicle {
+  private String name;
+  private String color;
+
+  public Vehicle(String name, String color) {
+    this.name = name;
+    this.color = color;
+  }
+
+  public void move() {
+    System.out.println("The vehicle " + this.name + " is moving.");
+  }
+
+  public void stop() {
+    System.out.println("The vehicle " + this.name + " has stopped.");
+  }
+
+}
+
+class Car extends Vehicle {
+  private String model;
+  private int doors;
+
+  public Car(String name, String model, String color, int doors) {
+    super(name, color);
+    this.model = model;
+    this.doors = doors;
+  }
+
+}
+
+class Plane extends Vehicle {
+  private String model;
+  private int engines;
+
+  public Plane(String name, String model, String color, int engines) {
+    super(name, color);
+    this.model = model;
+    this.engines = engines;
+  }
+
+  @Override
+  public void move() {
+    System.out.println("The plane is flying");
+    // super.move();
+  }
 
 }
